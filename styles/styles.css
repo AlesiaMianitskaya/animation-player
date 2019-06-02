@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+body li {
+  list-style: none;
+  cursor: pointer;
+}
+
+body ul {
+  padding: 0px 0px 0px 18px;
+}
+
+main {
+  height: 1000px;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.panels {
+  display: inline-block;
+  position: relative;
+  left: 29px;
+}
+
+.pallete-container {
+  width: 170px;
+  height: 246px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.pallete-container li {
+  padding: 16px 0px;
+}
+
+.pallete-container img {
+  margin-right: 18px;
+}
+
+.pallete-container hr {
+  width: 170px;
+  margin: 0px -18px;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.colors-container {
+  width: 170px;
+  height: 400px;
+  margin-top: 90px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.colors-container div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.colors-container li {
+  padding: 10px 0px;
+}
+
+#red > div {
+  background-color: red;
+}
+
+#blue > div {
+  background-color: blue;
+}
+
+#green > div {
+  background-color: green;
+}
+
+#pink > div {
+  background-color: pink;
+}
+
+#yellow > div {
+  background-color: yellow;
+}
+
+.canvas-container {
+  display: inline-block;
+  width: 630px;
+  height: 631px;
+  margin: 110px 0px 100px 90px;
+}
+
+.canvas-container div {
+  display: inline-block;
+  width: 605px;
+  height: 600px;
+  background-color: #ececf1;
+}
+
+.preview {
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+  position: relative;
+  bottom: 260px;
+  left: 55px;
+  overflow: scroll;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.add-frame {
+  position: relative;
+  top: 325px;
+  width: 120px;
+  height: 60px;
+  margin: 0 40px;
+  padding-left: 35px;
+  border: none;
+  background-color: #ececf1;
+  background-image: url(../assets/plus.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  font-size: 14px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.preview div {
+  width: 120px;
+  height: 100px;
+  margin: 15px auto;
+  background-color: #ececf1;
+}
+
+.preview img {
+  display: inherit;
+}
+
+.active {
+  border: 3px solid #ffd700;
+}
+
+.animation {
+  width: 250px;
+  height: 250px;
+  bottom: 405px;
+  left: 20px;
+}
+
+.animation > div {
+  width: 200px;
+  height: 180px;
+}
+
+.animation > input {
+  margin-left: 50px;
+}

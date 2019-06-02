@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <title>Pallete</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="panels">
+        <div id="pallete" class="pallete-container">
+          <ul>
+            <li id="paint_bucket">
+              <img src="./assets/backet.png" alt="bucket" />Paint bucket
+            </li>
+            <li id="choose_color">
+              <img src="./assets/picker.png" alt="color" />Choose color
+            </li>
+            <hr />
+            <li id="transform">
+              <img src="./assets/transform.png" alt="transform" />Transform
+            </li>
+          </ul>
+        </div>
+
+        <div id="color" class="colors-container">
+          <ul id="color-set">
+            <li id="current">
+              <div></div>
+              Current color
+            </li>
+            <li id="prev">
+              <div></div>
+              Prev color
+            </li>
+          </ul>
+          <hr />
+          <ul id="color-config">
+            <li id="red">
+              <div></div>
+              red
+            </li>
+            <li id="blue">
+              <div></div>
+              blue
+            </li>
+            <li id="green">
+              <div></div>
+              green
+            </li>
+            <li id="pink">
+              <div></div>
+              pink
+            </li>
+            <li id="yellow">
+              <div></div>
+              yellow
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="preview" class="preview">
+        <button id="add" class="add-frame">Add new frame</button>
+      </section>
+
+      <div id="canvas" class="canvas-container">
+        <div id="figure_1" class="figure-one"></div>
+      </div>
+
+      <section class="animation preview">
+        <div id="animation"></div>
+        <input
+          type="range"
+          id="fps"
+          name="fps"
+          min="0"
+          max="24"
+          step="1"
+          value="0"
+        />
+        <label for="fps">FPS</label>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
